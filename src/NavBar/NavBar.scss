@@ -1,0 +1,30 @@
+.parte-superior{
+  
+  justify-content: space-between;
+  border-bottom: 2px solid #E0752F;
+  height: 6rem;
+     .menu{
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 42.68rem;
+      height: 100%;
+      margin-right: 110px;
+      justify-content: flex-end;
+      align-content: space-around;
+      text-align: center;
+      font-family: Thasadith;
+    }
+    
+.menues{
+    display: inline-block;
+    height: 25.6%;
+    width: 13%;
+    justify-content: right;
+    text-align: center; 
+    text-decoration:none;
+    color: #fff;
+}
+
+  }  
+    
