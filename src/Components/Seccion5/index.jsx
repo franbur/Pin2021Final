@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 
 import Button from './components/button.jsx';
@@ -9,13 +9,41 @@ import Alert from "./components/alert.jsx";
 
 const axios = require('axios');
 
+function mailValidator(mail){
+    if (mail.includes('@')){
+
+      let helper_mail = mail.slice(mail.indexOf("@"), mail.length);
+      helper_mail = helper_mail.split(".");
+
+      if ( helper_mail.length === 2 && helper_mail[0].length>1 && helper_mail[1].length>1) {
+        return true;
+      } else {
+        return false;
+      }
+    
+    } else {
+        return false;
+    }
+}
+
 export function Seccion5(){
 
     const [type, setType] = useState(0);
     const [disabled, setDisabled] = useState(false);
     const [data, setData] = useState({"name":"", "email":"", "phone":"", "message":""});
 
+    // Con este use effect las alertas desaparecen después de 7.5 segudos
+    useEffect(()=>{
+        if (type != 0){
+          setTimeout(()=>setType(0), 7500);
+        }
+      }, [type])
+
     function handleData (event) {
+        // Si hay una alerta puesta y ejecuta esta función la alerta desaparece
+        if (type != 0){
+            setType(0);
+        }
         let new_data = {...data}
         new_data[event.target.name] = event.target.value;
         setData(new_data);
@@ -24,17 +52,17 @@ export function Seccion5(){
     function handleSend (event) {
         event.preventDefault();
 
-        if (data.name && data.message && data.email && data.phone){
+        if (data.name && data.message && data.email && data.phone && mailValidator(data.email)){
             setDisabled(true);
             axios.post(
-                "http://localhost:8000/api/post", data
+                "http://localhost:8000/api/post",data
             ).then(res=>{
                 setType(res.data.status);
                 setData ({"name":"", "email":"", "phone":"", "message":""});
                 setDisabled(false);
             }).catch(()=>{
                 setDisabled(false);
-                setType(200);
+                setType(505);
             });
         } else {
             setType(1);
