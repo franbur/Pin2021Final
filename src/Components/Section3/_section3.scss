@@ -1,8 +1,7 @@
 .contenedor-tres{
-    width: 85rem;
+    width: 84.5rem;
     height: 48rem;
     display: flex;
-    // border: 4px solid salmon;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -10,7 +9,7 @@
   .imagentres{
     width: 966px;
     height: 552px;
-    background-image: url(../../img/section3-image.png);
+    background-image: url(../../assets/img/section3-image.png);
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -90,7 +89,7 @@ align-items: flex-end;
 }
 
 .flecha-izquierda{
-background-image: url(../../img/left.svg);
+background-image: url(../../assets/img/left.svg);
 background-repeat: no-repeat;
 // background-size: 60%;
 width: 2rem;
@@ -98,7 +97,7 @@ height: 1.5rem;
 }
 
 .flecha-derecha{
-background-image: url(../../img/rigth.svg);
+background-image: url(../../assets/img/rigth.svg);
 background-repeat: no-repeat;
 // background-size: 60%;
 width: 2rem;

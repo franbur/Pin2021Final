@@ -1,10 +1,10 @@
-import "./App.css";
-import { Section1 } from "./Section/Section1/Section1";
-import { Section2 } from "./Section/Section2/Section2";
-import { Section3 } from "./Section/Section3/Section3";
-import { Section4 } from "./Section/Section4/Section4";
-import { Seccion5 } from "./Section/Seccion5/index.jsx";
-import Footer from "./Footer/footer";
+
+import { Section1 } from "./Components/Section1/Section1";
+import { Section2 } from "./Components/Section2/Section2";
+import { Section3 } from "./Components/Section3/Section3";
+import { Section4 } from "./Components/Section4/Section4";
+import { Seccion5 } from "./Components/Seccion5/index.jsx";
+import Footer from "./Components/Footer/footer";
 
 
 function App() {

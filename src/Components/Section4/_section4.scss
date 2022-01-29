@@ -1,9 +1,9 @@
 .contenedor-cuatro{
-    width: 85rem;
+    width: 84.5rem;
     height: 48rem;
     background: #fff;
     display: flex;
-    background-image: url(../../img/section4-image.png);
+    background-image: url(../../assets/img/section4-image.png);
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -16,5 +16,8 @@
   
   .accordion-body{
     color:#5f6368;
+  }
+  .accordion-button colapsed{
+    color: orange;
   }
   

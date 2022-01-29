@@ -1,6 +1,5 @@
 import React from "react"
-import Navbar from "../../NavBar/Navbar"
-
+import Navbar from "../NavBar/Navbar"
 export function Section1(params){
     return(    
     <div id = "seccion1" className="contenedor">
@@ -17,7 +16,7 @@ export function Section1(params){
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">
                         <div className="titulos">
-                            <h1 className="titulo-uno">Sed ut perspiciatis unde omnis iste natus</h1>
+                            <h1 className="titulo-uno">Sed ut perspiciatis unde omnis </h1>
                             <h3 className="titulo-dos">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</h3>
                             <button className="button">Read more</button>
                         </div>

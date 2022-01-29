@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import logo from "../img/top-logo.svg";
+import logo from  "../../assets/img/top-logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
-import "./NavBar.scss";
 
 export default class Navbar extends Component {
   render() {
     return (
       <nav className="parte-superior" id="navbar">
-        <div className="menu">
+        {/* <div className="menu"> */}
           <img
               src={logo}
               // className="imagen"
@@ -17,9 +16,9 @@ export default class Navbar extends Component {
           <ul className="menues">
           
             <Link
-            activeClass="active"
+             activeClass="active"
             to="seccion1"
-            spy={true}
+            // spy={true}
             smooth={true}
             offset={-70}
             duration={500}>Home</Link>
@@ -27,7 +26,7 @@ export default class Navbar extends Component {
             <Link
             activeClass="active"
             to="seccion2"
-            spy={true}
+            // spy={true}
             smooth={true}
             offset={-70}
             duration={500}>About</Link>
@@ -35,7 +34,7 @@ export default class Navbar extends Component {
             <Link
             activeClass="active"
             to="seccion3"
-            spy={true}
+            // spy={true}
             smooth={true}
             offset={-70}
             duration={500}>Product</Link>
@@ -43,7 +42,7 @@ export default class Navbar extends Component {
             <Link
             activeClass="active"
             to="seccion4"
-            spy={true}
+            // spy={true}
             smooth={true}
             offset={-70}
             duration={500}>Services</Link>
@@ -51,12 +50,12 @@ export default class Navbar extends Component {
             <Link
             activeClass="active"
             to="seccion5"
-            spy={true}
+            // spy={true}
             smooth={true}
             offset={-70}
             duration={500}>Contact</Link>                                       
           </ul>
-        </div>
+        {/* </div> */}
       </nav>
       
     );

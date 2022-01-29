@@ -1,7 +1,7 @@
-import "./footer.scss";
-import logofooter from "../img/footer-logo.svg";
+import React from 'react';
+import logofooter from "../../assets/img/footer-logo.svg";
 
-function Footer(){
+function Footer(params){
     return(    
         <div className="footer">
         <p className="texto-footer">2020 © All rights reserved.</p>
