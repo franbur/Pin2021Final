@@ -10,21 +10,20 @@ import Alert from "./components/alert.jsx";
 const axios = require('axios');
 
 function mailValidator(mail){
-    if (mail.includes('@')){
-
-      let helper_mail = mail.slice(mail.indexOf("@"), mail.length);
-      helper_mail = helper_mail.split(".");
-
-      if ( helper_mail.length === 2 && helper_mail[0].length>1 && helper_mail[1].length>1) {
-        return true;
+    mail = mail.split ("@");
+  
+    if (mail.length == 2){
+      mail = mail[1].split(".");
+      if (mail.length>=2 && mail[0] && mail[1] && mail[0].length>1 && mail[1].length >= 2){
+          return true;
       } else {
         return false;
       }
     
-    } else {
-        return false;
+    }else {
+      return false;
     }
-}
+  }
 
 export function Seccion5(){
 
