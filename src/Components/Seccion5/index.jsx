@@ -34,14 +34,14 @@ export function Seccion5(){
 
     // Con este use effect las alertas desaparecen después de 7.5 segudos
     useEffect(()=>{
-        if (type != 0){
+        if (type !== 0){
           setTimeout(()=>setType(0), 7500);
         }
       }, [type])
 
     function handleData (event) {
         // Si hay una alerta puesta y ejecuta esta función la alerta desaparece
-        if (type != 0){
+        if (type !== 0){
             setType(0);
         }
         let new_data = {...data}
