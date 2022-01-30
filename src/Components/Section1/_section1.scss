@@ -1,11 +1,19 @@
-.contenedor{
-    width: 84.5rem;
-    height: 48rem;
-    background-image: url(../../assets/img/imagen2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+// .contenedor{
+//     // width: 84.5rem;
+//     // height: 48rem;
+//     @include fullSpace;
+//     // background-image: url(../../assets/img/fondo1.jpg);
+//     // background-repeat: no-repeat;
+//     // background-size: cover;
+// }
+
+header{
+  background: transparent;
 }
 
+.carrusel{
+  @include fullSpace;
+}
 .ubicacion{
     width: 100%;
     height: 42rem;
@@ -37,4 +45,25 @@
   .redondeo{
     border-radius: 50%;
   }
-  
+
+  .imagenescarrusel1{
+    @include fullSpace;
+    background-image: url(../../assets/img/imagen2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .imagenescarrusel2{
+    @include fullSpace;
+    background-image: url(../../assets/img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .imagenescarrusel3{
+    @include fullSpace;
+    background-image: url(../../assets/img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+

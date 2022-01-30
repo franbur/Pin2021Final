@@ -1,6 +1,7 @@
 .contenedor-cuatro{
-    width: 84.5rem;
-    height: 48rem;
+    // width: 84.5rem;
+    // height: 48rem;
+    @include fullSpace;
     background: #fff;
     display: flex;
     background-image: url(../../assets/img/section4-image.png);

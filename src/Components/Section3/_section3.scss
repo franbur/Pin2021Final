@@ -1,6 +1,7 @@
 .contenedor-tres{
-    width: 84.5rem;
-    height: 48rem;
+    // width: 84.5rem;
+    // height: 48rem;
+    @include fullSpace;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -25,52 +26,42 @@
 }
 
 .flechas{
-
-position: absolute;
-width: 11.7rem;
-height: 3rem;
-top: 16rem;
-left: 60%;  
+  position: absolute;
+  width: 7.7rem;
+  height: 3rem;
+  top: 15rem;
+  left: 73%; 
 }
 
 .texto-caja1{
-width: 25rem;
-height: 1.5rem;
-color: #FFFFFF;
-opacity: 1;
-@include textStyles(Roboto,300,16px,0.22,normal);
-margin-left: 10%;
-margin-top: 15%;
-margin-bottom: 0px;
+  width: 137px;
+  height: 21px;
+  color: #FFFFFF;
+  opacity: 1;
+  @include textStyles(Roboto,300,16px,0.22,normal);
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 0px;
 }
 
 .texto-caja2{
-width: 25rem;
-height: 5rem;
-margin-left: 10%;
-margin-bottom: 0px;
-letter-spacing: 0.55px;
-color: #FFFFFF;
-opacity: 1;
-font-family: 'Poppins', sans-serif;
-font-size: 35px;
-font-weight: medium;
-font-style: normal;
+  width: 372px;
+  height: 75px;
+  margin-left: 10%;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  @include textStyles(Poppins,medium,35px,0.55px,normal);
 }
 
 .texto-caja3{
-width: 25rem;
-height: 5rem;
-margin-left: 10%;
-margin-top: 0.5rem;
-letter-spacing: 0.22px;
-color: rgba(255, 255, 255, 1);
-opacity: 1;
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-weight:lighter;
-font-style: normal;
-
+  width: 372px;
+  height: 63px;
+  margin-left: 10%;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  @include textStyles(Roboto,300,16px,0.22,normal);
 }
 
 .carousel-control-next{
