@@ -27,7 +27,7 @@ export default class Navbar extends Component {
             
             <Link
             activeClass="active"
-            to="seccion3"
+            to="seccion3" 
             smooth={true}
             duration={500}>Product</Link>
             

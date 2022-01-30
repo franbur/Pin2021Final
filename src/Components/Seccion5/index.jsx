@@ -75,8 +75,8 @@ export function Seccion5(){
             <h3 className="titulo1">Get in touch</h3>
             <h3 className="titulo2">We are hiring!</h3>
             <Alert type={type}/>
-            <form action="" method="post" class="formulario">
-                <FormSection text="Name" type="text" placeholder="Enter your name" id="name" handler={handleData} value={data.name}/>
+            <form action="" method="post" className="formulario">
+                <FormSection text="Name"  type="text" placeholder="Enter your name" id="name" handler={handleData} value={data.name}/>
                 <FormSection text="Email" type="email" placeholder="name@example.com" id="email" handler={handleData} value={data.email}/>
                 <FormSection text="Phone" type="tel" placeholder="Number and area's code" id="phone" handler={handleData} value={data.phone}/>
                 <TextArea text="Message" id="message" handler={handleData} value={data.message}/>
@@ -84,7 +84,7 @@ export function Seccion5(){
                 <Button text="Send" handler={handleSend} disabled={disabled}/>
             </form>
         </div>
-        <div class="imagen-cinco"></div>  
+        <div className="imagen-cinco"></div>  
     </div>
     )
 }

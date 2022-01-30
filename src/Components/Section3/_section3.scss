@@ -1,6 +1,4 @@
 .contenedor-tres{
-    // width: 84.5rem;
-    // height: 48rem;
     @include fullSpace;
     display: flex;
     align-content: center;
@@ -78,7 +76,7 @@ align-items: flex-end;
 .flecha-izquierda{
 background-image: url(../../assets/img/left.svg);
 background-repeat: no-repeat;
-width: 2rem;
+width: 2.5rem;
 height: 1.5rem;
 }
 

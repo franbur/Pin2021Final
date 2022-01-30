@@ -6,9 +6,9 @@ export function Section1(params){
     <div id = "seccion1" className="carrusel">
             <div id="carouselExampleDark" className="ubicacion carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active redondeo" aria-current="true" aria-label="Slide 1" ></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="redondeo"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="redondeo"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active redondeo" aria-current="true" aria-label="Slide 1" ></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" className="redondeo"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" className="redondeo"></button>
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">

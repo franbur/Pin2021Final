@@ -1,28 +1,30 @@
 .contenedor-cuatro{
-    // width: 84.5rem;
-    // height: 48rem;
     @include fullSpace;
     background: #fff;
     display: flex;
     background-image: url(../../assets/img/section4-image.png);
     background-repeat: no-repeat;
     background-position: right;
-
   }
   
   .accordion{
     margin-top: 144px;
     margin-left: 101px;
-    width: 50%;
+    margin-right: 596px;
+    width: 100%;
   }
   
   .accordion-body{
+    width: 669px;
+    height: 184px;
+    @include textStyles(Roboto,400,16px,0.22,normal);
     color:#5f6368;
-    @include textStyles(Roboto,300,16px,0.22,normal);
+    padding: 40px 37px 37px 39px;
   }
   
-  .accordion-header{
-    @include textStyles(Roboto,400,16px,0.22,normal);
+  .accordion-button{
+    @include textStyles(Roboto,600,16px,0.22,normal);
+    color: #5F6368;
   }
   
   .accordion-button colapsed{
