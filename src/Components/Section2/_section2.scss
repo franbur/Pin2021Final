@@ -11,6 +11,8 @@
   .primerh1{
     color: #343434;
     @include textStyles(Poppins,400,39px,0.55,normal);
+  //   @include response (md){
+      
   }
   
   .segundoh1{
