@@ -13,14 +13,13 @@
 }
 
 .titulos-cinco .titulo1{
-  letter-spacing: 0.55px;
+  @include textStyles(Poppins,400,39px,0.55,normal);
   color: #343434;
-  font-weight: bolder;
 }
+
 .titulos-cinco .titulo2{
-  letter-spacing: 0.55px;
+  @include textStyles(Poppins,400,39px,0.55,normal);
   color: #E0752F;
-  font-weight: bolder;
 }
 
 .imagen-cinco{
@@ -63,10 +62,5 @@
 
 .button-cinco{
   margin-top: 4rem;
-  width: 144px;
-  height: 48px;
-  background: #E0752F;
-  color: #FFFFFF;
-  border-radius: 1.5rem;
-  border-style: none;
+ @include btnStyles;
 }

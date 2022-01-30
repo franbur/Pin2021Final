@@ -15,40 +15,23 @@
     margin-top: 154px;
     margin-left: 101px;
   }
-  
   .titulo-uno{
     width: 554px;
     height: 115px;
-    letter-spacing: 0.67px;
-    font-family: Poppins;
-    font-weight: normal;
-    font-size: 48px;
+    @include textStyles(Poppins,600,48px,0.67,normal);
     color: #FFFFFF;
-  }
-  
-  .titulo-dos{
+}
+.titulo-dos{
     width: 30rem;
     height: 2.6;
-    font-style: normal;
-    font-weight:medium;
-    font-size: 16px;
-    font-family: Roboto;
+    @include textStyles(Roboto,300,16px,0.22,normal);
     text-align: left;
-    letter-spacing: 0.22px;
     color: #FFFFFF;
     opacity: 1;
   }
   
   .button{
-    width: 144px;
-    height: 48px;
-    background: #E0752F;
-    color: #FFFFFF;
-    border-radius: 25px;
-    border-style: none;
-    margin-top: 30px;  
-    font-family: Roboto; 
-    font-size: 21px;   
+    @include btnStyles;
   }
   
   .redondeo{

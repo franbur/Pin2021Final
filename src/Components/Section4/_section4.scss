@@ -6,6 +6,7 @@
     background-image: url(../../assets/img/section4-image.png);
     background-repeat: no-repeat;
     background-position: right;
+
   }
   
   .accordion{
@@ -16,7 +17,13 @@
   
   .accordion-body{
     color:#5f6368;
+    @include textStyles(Roboto,300,16px,0.22,normal);
   }
+  
+  .accordion-header{
+    @include textStyles(Roboto,400,16px,0.22,normal);
+  }
+  
   .accordion-button colapsed{
     color: orange;
   }

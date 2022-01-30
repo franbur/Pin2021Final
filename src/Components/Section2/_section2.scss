@@ -1,6 +1,5 @@
 .contenedor-dos{
     background: #FFFFFF;
-    // top: 768px;
     left: 0px;
     width: 84.5rem;
     height: 48rem;
@@ -10,11 +9,14 @@
   .segunda-parte{
     margin-left: 299px;    
   }
-  
+  .primerh1{
+    color: #343434;
+    @include textStyles(Poppins,400,39px,0.55,normal);
+  }
   
   .segundoh1{
     color: #E0752F;
-    letter-spacing: 0.55px;
+    @include textStyles(Poppins,400,39px,0.55,normal);
   }
   
   .barra{
@@ -27,8 +29,9 @@
     width: 768px;
     height: 197px;
     display: inline-block;
-    letter-spacing: 0.22px;
+    @include textStyles(Roboto,300,16px,0.22,normal);
     color: #343434;
     opacity: 1;
     text-align: justify;
+    margin-top: 44px;
   }

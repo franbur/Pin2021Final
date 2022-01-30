@@ -20,14 +20,14 @@
     position: relative;
     width: 471px;
     height: 304px;
-background: #E0752F;
+    background: #E0752F;
+    padding-bottom: 31px;
 }
 
 .flechas{
 
 position: absolute;
 width: 11.7rem;
-margin-right: 1rem;
 height: 3rem;
 top: 16rem;
 left: 60%;  
@@ -36,16 +36,12 @@ left: 60%;
 .texto-caja1{
 width: 25rem;
 height: 1.5rem;
-letter-spacing: 0.22px;
 color: #FFFFFF;
 opacity: 1;
-font-family: Roboto;
-font-weight: normal;
-font-size: 12px;
+@include textStyles(Roboto,300,16px,0.22,normal);
 margin-left: 10%;
 margin-top: 15%;
 margin-bottom: 0px;
-font-style: normal; 
 }
 
 .texto-caja2{
@@ -91,7 +87,6 @@ align-items: flex-end;
 .flecha-izquierda{
 background-image: url(../../assets/img/left.svg);
 background-repeat: no-repeat;
-// background-size: 60%;
 width: 2rem;
 height: 1.5rem;
 }
@@ -99,12 +94,6 @@ height: 1.5rem;
 .flecha-derecha{
 background-image: url(../../assets/img/rigth.svg);
 background-repeat: no-repeat;
-// background-size: 60%;
 width: 2rem;
 height: 1.5rem;
-}
-
-.carousel-control-prev{
-border: 1px solid red;
-
 }

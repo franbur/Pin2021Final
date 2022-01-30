@@ -1,7 +1,30 @@
+@mixin textStyles ($font-family, $font-weight, $font-size, $letter-spacing, $font-style){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  font-style: $font-style;
+}
+@mixin btnStyles {
+  width: 144px;
+  height: 48px;
+  background: #E0752F;
+  color: #FFFFFF;
+  border-radius: 25px;
+  border-style: none;
+  margin-top: 30px;  
+  font-family: Roboto; 
+  font-size: 16px;   
+
+}
+@mixin fullSpace {
+  height: 100%;
+  width: 100%;
+}
+
 body {
     background-image: linear-gradient(to right, #F2F4F1 75%, #DCE1DA 75%);
     padding: 0px;
     margin: 0px;
-    overflow-x: hidden;
   }
   
