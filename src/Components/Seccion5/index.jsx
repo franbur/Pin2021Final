@@ -13,7 +13,7 @@ const axios = require('axios');
 function mailValidator(mail){
     mail = mail.split ("@");
   
-    if (mail.length == 2){
+    if (mail.length === 2){
       mail = mail[1].split(".");
       if (mail.length>=2 && mail[0] && mail[1] && mail[0].length>1 && mail[1].length >= 2){
           return true;

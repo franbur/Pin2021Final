@@ -7,8 +7,10 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 101px;
+    min-height: 10vh;
 
     @include response(md){
+      min-height: 0;
       justify-content: center;
       flex-direction: column-reverse;
       padding: 0.5vh 1vh 1vh 1vh ;
