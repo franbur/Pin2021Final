@@ -4,35 +4,43 @@
 
 
 .titulos-cinco{
-  width: 285px;
-  height: 100px;
-  margin-top: 120px;
-  margin-left: 101px;
+  width: 50%;
+  // height: 100px;
+  margin-top: 2vw; 
+  margin-left: 2vw;
+  
 }
 
 .titulos-cinco .titulo1{
   @include textStyles(Poppins,600,39px,0.55,normal);
   height: 50.5px;
   color: #343434;
+
 }
 
 .titulos-cinco .titulo2{
   @include textStyles(Poppins,600,39px,0.55,normal);
   height: 50.5px;
   color: #E0752F;
-  // // @include response (xl){
-    // //   font-size: smaller;
-    // }
+ 
+}
+
+.img-section{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .imagen-cinco{
   background-image: url(../../assets/img/imagen1.png);
   background-repeat: no-repeat;
-  width: 594px;
-  height: 400px;
-  margin-top: -21px;
-  left: 671px;
-  margin-left: 671px;
+  width: 95%;
+  // height: 400px;
+  // @include response(md){
+  //   display: none;
+  // }
 }
 
 .formulario{

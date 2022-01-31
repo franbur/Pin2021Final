@@ -6,6 +6,7 @@ import FormSection from './components/form_section.jsx';
 import TextArea from './components/form_text_area.jsx';
 
 import Alert from "./components/alert.jsx";
+import image from '../../assets/img/imagen1.png';
 
 const axios = require('axios');
 
@@ -54,7 +55,7 @@ export function Seccion5(){
         if (data.name && data.message && data.email && data.phone && mailValidator(data.email)){
             setDisabled(true);
             axios.post(
-                "http://localhost:8000/api/post",data
+                "https://grupo1-backend.herokuapp.com/api/post",data
             ).then(res=>{
                 setType(res.data.status);
                 setData ({"name":"", "email":"", "phone":"", "message":""});
@@ -84,7 +85,10 @@ export function Seccion5(){
                 <Button text="Send" handler={handleSend} disabled={disabled}/>
             </form>
         </div>
-        <div className="imagen-cinco"></div>  
+        <div className="img-section">
+            {/* <div className="imagen-cinco"></div> */}
+            <img src={image} alt="Imagen del globo aeroestático" />
+        </div>
     </div>
     )
 }
