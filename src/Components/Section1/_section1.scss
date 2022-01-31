@@ -5,8 +5,8 @@
 
   
 .titulos{
-  padding-top: 9.6rem;
-  padding-left: 6.3rem;
+  padding-top: 10rem;
+  padding-left: 10%;
 }
 .titulo-uno{
   height: 7.2rem;
@@ -65,7 +65,7 @@
 
   .carousel-indicators{
     justify-content: flex-start;
-    margin-left: 8%;
+    padding-left: 8%;
     @include response(md){
       height: 2.5rem;
       width: 33rem;

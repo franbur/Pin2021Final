@@ -6,14 +6,15 @@
   align-items: center;
 }
 .imagentres{
-  width: 65%;
-  height: 72%;
+  width: 75%;
+  height: 70%;
   background-image: url(../../assets/img/section3-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+
   @include response(md){
     width: 100%;
     height: 100%;
@@ -22,25 +23,25 @@
     justify-content: center;
   }
 }
+// .carrusel2{
+//   width: 100%;
+
+// }
   
-.caja{
-  position: relative;
+.content{
+
   width: 50%;
-  height: 50%;
   background: #E0752F;
-  padding-bottom: 31px;
+  padding: 5% 10%;
+  max-height: 65%;
   @include response(md){
-    // width: 14.7rem;
-    // height: 9.5rem;
+    min-height: 65%;
   }
 }
 
 .flechas{
-  position: absolute;
-  width: 7.7rem;
   height: 3rem;
-  top: 15rem;
-  left: 73%; 
+
   @include response(md){
     top: 5.5rem;
     font-size: 10px;
@@ -48,46 +49,46 @@
   }
 }
 
-.texto-caja1{
-  width: 80%;
-  color: #FFFFFF;
-  opacity: 1;
-  @include textStyles(Roboto,300,16px,0.22,normal);
-  margin-left: 10%;
-  margin-top: 7%;
-  @include response(md){
-    margin-top: 1rem;
-    font-size: 10px;
-    margin-left: 1.2rem;
-  }
-}
+// .texto-caja1{
+//   width: 80%;
+//   color: #FFFFFF;
+//   opacity: 1;
+//   @include textStyles(Roboto,300,16px,0.22,normal);
+//   margin-left: 10%;
+//   margin-top: 7%;
+//   @include response(md){
+//     margin-top: 1rem;
+//     font-size: 10px;
+//     margin-left: 1.2rem;
+//   }
+// }
 
-.texto-caja2{
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-  @include textStyles(Poppins,medium,35px,0.55px,normal);
-  @include response(md){
-    font-size: 17px;
-  }
-}
+// .texto-caja2{
+//   width: 80%;
+//   margin-left: 10%;
+//   margin-bottom: 0px;
+//   color: #FFFFFF;
+//   opacity: 1;
+//   @include textStyles(Poppins,medium,35px,0.55px,normal);
+//   @include response(md){
+//     font-size: 17px;
+//   }
+// }
 
-.texto-caja3{
-  width: 80%;
-  height: 63px;
-  margin-left: 10%;
-  margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 1);
-  opacity: 1;
-  @include textStyles(Roboto,300,16px,0.22,normal);
-  @include response(md){
-    width: 11rem;
-    height: 1.2rem;
-    font-size: 10px;
-  }
-}
+// .texto-caja3{
+//   width: 80%;
+//   height: 63px;
+//   margin-left: 10%;
+//   margin-top: 0.5rem;
+//   color: rgba(255, 255, 255, 1);
+//   opacity: 1;
+//   @include textStyles(Roboto,300,16px,0.22,normal);
+//   @include response(md){
+//     width: 11rem;
+//     height: 1.2rem;
+//     font-size: 10px;
+//   }
+// }
 
 .carousel-control-next{
   width: 100%;
