@@ -1,34 +1,49 @@
 
     
-.menues{
-    display:flex;
-    justify-content: space-between;
-    height: 25.6%;
-    width: 29rem;
-    text-align: center; 
-    text-decoration:none;
-    color: #fff;
-    @include response(md){
-      width: 50%;
-      padding-right: 10%;
-      font-size: 12px;
-    }
-}
 
 //   }  
-  .parte-superior{
-    width: 100vw;
-    border-bottom: 2px solid #E0752F;
-    height: 6rem;
+.nav{
+  width: 100%;
+  border-bottom: 2px solid #E0752F;
+  background-color: rgba(0, 0, 0, 0.329);
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 100px;
+  padding-top: 2.3rem;
+  padding-bottom: 2.2rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+
+  @include response(md){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav img{
+  width: 10%;
+  @include response(md){
+    width: 30%;
+  }
+}
+
+.options{
+  display:flex;
+  justify-content: space-between;
+  height: 25.6%;
+  width: 50%;
+  text-align: center; 
+  text-decoration:none;
+  color: #fff;
+  padding: 1rem;
+  @include response(md){
+    
     display: flex;
     justify-content: space-between;
-    padding-right: 6.3rem;
-    padding-left: 6.3rem;
-    padding-top: 2.3rem;
-    padding-bottom: 2.2rem;
-    cursor: pointer;
-    @include response(md){
-      padding-right: 0;
-    }
-  }  
-  
+    font-size: 12px;
+  }
+}
+

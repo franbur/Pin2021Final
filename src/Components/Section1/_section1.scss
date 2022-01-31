@@ -1,6 +1,3 @@
-header{
-  background: transparent;
-}
 
 .carrusel{
   @include fullSpace;
@@ -8,11 +5,10 @@ header{
 
   
 .titulos{
-  margin-top: 9.6rem;
-  margin-left: 6.3rem;
+  padding-top: 9.6rem;
+  padding-left: 6.3rem;
 }
 .titulo-uno{
-  width: 34.25rem;
   height: 7.2rem;
   @include textStyles(Poppins,600,48px,0.67,normal);
   color: #FFFFFF;
@@ -23,7 +19,6 @@ header{
 }
 
 .titulo-dos{
-    width: 30rem;
     height: 2.6rem;
     @include textStyles(Roboto,300,16px,0.22,normal);
     text-align: left;
@@ -38,7 +33,7 @@ header{
     @include btnStyles;
     @include response(md){
       font-size: 13px;
-      height: 2rem;
+
       width: 5rem;
     }
   }

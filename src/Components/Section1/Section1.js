@@ -13,9 +13,6 @@ export function Section1(params){
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">
                             <div className="imagenescarrusel1">
-                            <header>
-                                <Navbar/>
-                            </header>
                             <div className="titulos">
                                 <h1 className="titulo-uno">Sed ut perspiciatis unde omnis </h1>
                                 <h3 className="titulo-dos">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</h3>
@@ -25,9 +22,6 @@ export function Section1(params){
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
                         <div className="imagenescarrusel2">
-                            <header>
-                                <Navbar/>
-                            </header>
                             <div className="titulos">
                                 <h1 className="titulo-uno">Customize el carrusel en bootstrap</h1>
                                 <h3 className="titulo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
@@ -37,9 +31,6 @@ export function Section1(params){
                     </div>
                     <div className="carousel-item">
                         <div className="imagenescarrusel3">
-                            <header>
-                                <Navbar/>
-                            </header>
                             <div className="titulos">
                                 <h1 className="titulo-uno">Buscamos a lo mejor que tienes en ti</h1>
                                 <h3 className="titulo-dos">Texto random para ver que valga el carrusel.</h3>
