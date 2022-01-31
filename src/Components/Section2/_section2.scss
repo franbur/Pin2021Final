@@ -6,33 +6,58 @@
     align-items: center;
   }
   .segunda-parte{
-    margin-left: 299px;    
+    width: 80%;
+    margin-left: 20%; 
+    @include response(md){
+      margin-left: 6rem;
+      margin-bottom: 6rem;
+    }
   }
   .primerh1{
     color: #343434;
     @include textStyles(Poppins,400,39px,0.55,normal);
-  //   @include response (md){
+    @include response (md){
+      width: 19rem;
+      height: 1.5rem;
+      font-size: 1.5rem;
+    }
       
   }
   
   .segundoh1{
     color: #E0752F;
     @include textStyles(Poppins,400,39px,0.55,normal);
+    @include response(md){
+      width: 19rem;
+      height: 1.5rem;
+      font-size: 1.5rem;
+    }
   }
   
   .barra{
-    width: 32px;
-    height: 384px;
+    width: 2rem;
+    height: 24rem;
     background: #E0752F;
+    @include response(md){
+      width: 0.5rem;
+      height: 10rem;
+      margin-bottom: 6rem;
+    }
   }
   
   .texto1{
-    width: 768px;
-    height: 197px;
+    width: 90%;
+    height: 12.3rem;
     display: inline-block;
     @include textStyles(Roboto,300,16px,0.22,normal);
     color: #343434;
     opacity: 1;
     text-align: justify;
-    margin-top: 44px;
+    margin-top: 2rem;
+    @include response(md){
+      width: 32rem;
+      height: 1rem;
+      font-size: 0.7rem;
+      margin-top: 1rem;
+    }
   }

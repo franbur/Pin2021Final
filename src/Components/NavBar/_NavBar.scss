@@ -4,22 +4,31 @@
     display:flex;
     justify-content: space-between;
     height: 25.6%;
-    width: 400px;
+    width: 29rem;
     text-align: center; 
     text-decoration:none;
     color: #fff;
+    @include response(md){
+      width: 50%;
+      padding-right: 10%;
+      font-size: 12px;
+    }
 }
 
 //   }  
   .parte-superior{
+    width: 100vw;
     border-bottom: 2px solid #E0752F;
     height: 6rem;
     display: flex;
     justify-content: space-between;
-    padding-right: 101px;
-    padding-left: 101px;
-    padding-top: 38px;
-    padding-bottom: 37px;
+    padding-right: 6.3rem;
+    padding-left: 6.3rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2.2rem;
     cursor: pointer;
+    @include response(md){
+      padding-right: 0;
+    }
   }  
   

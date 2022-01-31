@@ -5,32 +5,42 @@ header{
 .carrusel{
   @include fullSpace;
 }
-.ubicacion{
-    width: 100%;
-    height: 42rem;
-  }
+
   
-  .titulos{
-    margin-top: 154px;
-    margin-left: 101px;
-  }
-  .titulo-uno{
-    width: 554px;
-    height: 115px;
-    @include textStyles(Poppins,600,48px,0.67,normal);
-    color: #FFFFFF;
+.titulos{
+  margin-top: 9.6rem;
+  margin-left: 6.3rem;
 }
+.titulo-uno{
+  width: 34.25rem;
+  height: 7.2rem;
+  @include textStyles(Poppins,600,48px,0.67,normal);
+  color: #FFFFFF;
+  @include response(md){
+    font-size: 35px;
+  }
+
+}
+
 .titulo-dos{
     width: 30rem;
-    height: 2.6;
+    height: 2.6rem;
     @include textStyles(Roboto,300,16px,0.22,normal);
     text-align: left;
     color: #FFFFFF;
     opacity: 1;
+    @include response(md){
+      font-size: 14px;
+    }
   }
   
   .button{
     @include btnStyles;
+    @include response(md){
+      font-size: 13px;
+      height: 2rem;
+      width: 5rem;
+    }
   }
   
   .redondeo{
@@ -56,5 +66,15 @@ header{
     background-image: url(../../assets/img/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .carousel-indicators{
+    justify-content: flex-start;
+    margin-left: 8%;
+    @include response(md){
+      height: 2.5rem;
+      width: 33rem;
+      margin-left: 13%;
+    }
   }
 

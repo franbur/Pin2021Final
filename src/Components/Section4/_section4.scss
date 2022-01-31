@@ -5,21 +5,42 @@
     background-image: url(../../assets/img/section4-image.png);
     background-repeat: no-repeat;
     background-position: right;
+    @include response(md){
+      width: 100%;
+      background-image: none;
+    }
   }
   
   .accordion{
-    margin-top: 144px;
-    margin-left: 101px;
-    margin-right: 596px;
-    width: 100%;
+    margin-top: 9rem;
+    margin-left: 6.3rem;
+    margin-right: 37.25rem;
+    width: 90%;
+    height: 80%;
+    @include response(md){
+      margin-top: 8rem;
+      margin-left: 6rem;
+      margin-right: 4rem;
+    }
+  }
+
+  .accordion-header{
+    @include response(md){
+      font-size: 16px;
+    }
   }
   
   .accordion-body{
-    width: 669px;
-    height: 184px;
+    width: 90%;
+    height: 10rem;
     @include textStyles(Roboto,400,16px,0.22,normal);
     color:#5f6368;
     padding: 40px 37px 37px 39px;
+    overflow: hidden;
+    @include response(md){
+      font-size: 16px;
+      text-align: justify;
+    }
   }
   
   .accordion-button{

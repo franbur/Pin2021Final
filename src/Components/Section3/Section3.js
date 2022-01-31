@@ -5,7 +5,7 @@ export function Section3(params){
         <div id="seccion3" className ="contenedor-tres">
             <div className="imagentres">
                 <div className="caja">
-                    <div className="carrusel">
+                    <div className="carrusel2">
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div>
                                 <div className="carousel-item active">

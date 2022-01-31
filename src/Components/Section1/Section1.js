@@ -30,7 +30,7 @@ export function Section1(params){
                             </header>
                             <div className="titulos">
                                 <h1 className="titulo-uno">Customize el carrusel en bootstrap</h1>
-                                <h3 className="titulo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit neque blanditiis eum nulla ipsam mollitia voluptates saepe. Quia similique, veniam incidunt vitae nesciunt magnam voluptates illo, maxime eligendi optio obcaecati..</h3>
+                                <h3 className="titulo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
                                 <button className="button">Read more</button>
                             </div>
                         </div>

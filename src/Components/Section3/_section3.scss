@@ -1,26 +1,36 @@
 .contenedor-tres{
-    @include fullSpace;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  @include fullSpace;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.imagentres{
+  width: 65%;
+  height: 72%;
+  background-image: url(../../assets/img/section3-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  @include response(md){
+    // width: 25rem;
+    // height: 15rem;
+    background-size: cover;
   }
-  .imagentres{
-    width: 966px;
-    height: 552px;
-    background-image: url(../../assets/img/section3-image.png);
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
+}
   
-  .caja{
-    position: relative;
-    width: 471px;
-    height: 304px;
-    background: #E0752F;
-    padding-bottom: 31px;
+.caja{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  background: #E0752F;
+  padding-bottom: 31px;
+  @include response(md){
+    // width: 14.7rem;
+    // height: 9.5rem;
+  }
 }
 
 .flechas{
@@ -29,48 +39,63 @@
   height: 3rem;
   top: 15rem;
   left: 73%; 
+  @include response(md){
+    top: 5.5rem;
+    font-size: 10px;
+    left: 10.9rem;
+  }
 }
 
 .texto-caja1{
-  width: 137px;
-  height: 21px;
+  width: 80%;
   color: #FFFFFF;
   opacity: 1;
   @include textStyles(Roboto,300,16px,0.22,normal);
   margin-left: 10%;
-  margin-top: 15%;
-  margin-bottom: 0px;
+  margin-top: 7%;
+  @include response(md){
+    margin-top: 1rem;
+    font-size: 10px;
+    margin-left: 1.2rem;
+  }
 }
 
 .texto-caja2{
-  width: 372px;
-  height: 75px;
+  width: 80%;
   margin-left: 10%;
   margin-bottom: 0px;
   color: #FFFFFF;
   opacity: 1;
   @include textStyles(Poppins,medium,35px,0.55px,normal);
+  @include response(md){
+    font-size: 17px;
+  }
 }
 
 .texto-caja3{
-  width: 372px;
+  width: 80%;
   height: 63px;
   margin-left: 10%;
   margin-top: 0.5rem;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
   @include textStyles(Roboto,300,16px,0.22,normal);
+  @include response(md){
+    width: 11rem;
+    height: 1.2rem;
+    font-size: 10px;
+  }
 }
 
 .carousel-control-next{
-width: 100%;
-height: 90%;
-align-items: flex-end;
+  width: 100%;
+  height: 90%;
+  align-items: flex-end;
 }
 .carousel-control-prev{
-width: 50%;
-height: 90%;
-align-items: flex-end;
+  width: 50%;
+  height: 90%;
+  align-items: flex-end;
 }
 
 .flecha-izquierda{
@@ -78,6 +103,11 @@ background-image: url(../../assets/img/left.svg);
 background-repeat: no-repeat;
 width: 2.5rem;
 height: 1.5rem;
+  @include response(md){
+    width: 4rem;
+    height: 1.5rem;
+    background-size: 1rem;
+  }
 }
 
 .flecha-derecha{
@@ -85,4 +115,9 @@ background-image: url(../../assets/img/rigth.svg);
 background-repeat: no-repeat;
 width: 2rem;
 height: 1.5rem;
+  @include response(md){
+    width: 4rem;
+    height: 1.5rem;
+    background-size: 1rem;
+  }
 }
