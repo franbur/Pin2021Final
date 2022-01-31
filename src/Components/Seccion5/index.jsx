@@ -85,10 +85,16 @@ export function Seccion5(){
                 <Button text="Send" handler={handleSend} disabled={disabled}/>
             </form>
         </div>
-        <div className="img-section">
-            {/* <div className="imagen-cinco"></div> */}
-            <img src={image} alt="Imagen del globo aeroestático" />
-        </div>
+
+        <img className="img" src={image} alt="Imagen de globo aeroestático" />
+
     </div>
     )
 }
+
+/* 
+        <div className="img-section">
+            { <div className="imagen-cinco"></div> }
+            
+            </div>
+*/

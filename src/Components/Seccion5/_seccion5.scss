@@ -1,87 +1,184 @@
+// .contenedor-cinco{
+//   @include fullSpace;
+// }
+
+
+// .titulos-cinco{
+//   width: 50%;
+//   // height: 100px;
+//   margin-top: 2vw; 
+//   margin-left: 2vw;
+  
+// }
+
+// .titulos-cinco .titulo1{
+//   @include textStyles(Poppins,600,39px,0.55,normal);
+//   height: 50.5px;
+//   color: #343434;
+
+// }
+
+// .titulos-cinco .titulo2{
+//   @include textStyles(Poppins,600,39px,0.55,normal);
+//   height: 50.5px;
+//   color: #E0752F;
+ 
+// <<<<<<< HEAD
+// }
+
+// .img-section{
+//   width: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+// =======
+// >>>>>>> 09cb35ad7bd38a07b02837adce20c4e3620de0b4
+// }
+
+// .imagen-cinco{
+//   background-image: url(../../assets/img/imagen1.png);
+//   background-repeat: no-repeat;
+//   width: 95%;
+//   // height: 400px;
+//   // @include response(md){
+//   //   display: none;
+//   // }
+// }
+
+// .formulario{
+//   padding: 10px;
+//   padding-top: 0;
+//   width: 471px;
+// }
+
+// .formulario__input-txt, .formulario__textarea{
+//   display: block;
+//   width: 100%;
+//   border: none;
+//   background: transparent;
+//   border-bottom: 2px solid #BEBEBE;
+
+// }
+
+// .formulario__input-txt{
+//   height: 33px;
+//   padding: 10px;
+//   margin-bottom: 10px;
+//   @include textStyles(Roboto,500,12px,0.22,normal);
+// }
+
+// .formulario__textarea{
+//   min-width: 100%;
+//   max-width: 100%;
+//   max-height: 73px;
+// }
+
+// .labelformularios{
+//   color: #5F6368;
+//   @include textStyles(Roboto,400,16px,0.22,normal);
+// }
+
+// .button-cinco{
+//   margin-top: 4rem;
+//  @include btnStyles;
+// }
+
+// .texto-placeholder{
+//   color: #5F6368;
+//   @include textStyles(Roboto,300,12px,0.22,lighter);
+// }
+
 .contenedor-cinco{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
   @include fullSpace;
+
+  @include response(md){
+    padding: 0;
+  }
 }
-
-
 .titulos-cinco{
   width: 50%;
-  // height: 100px;
-  margin-top: 2vw; 
-  margin-left: 2vw;
-  
+  display: flex;
+  flex-direction: column;
+
+  @include response(md){
+    width: 100%;
+    align-items: center;
+  }
 }
 
-.titulos-cinco .titulo1{
+.titulo1{
   @include textStyles(Poppins,600,39px,0.55,normal);
-  height: 50.5px;
+
   color: #343434;
 
+  @include response(md){
+    text-align: center;
+  }
 }
-
-.titulos-cinco .titulo2{
+.titulo2{
   @include textStyles(Poppins,600,39px,0.55,normal);
-  height: 50.5px;
+
   color: #E0752F;
- 
-}
 
-.img-section{
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.imagen-cinco{
-  background-image: url(../../assets/img/imagen1.png);
-  background-repeat: no-repeat;
-  width: 95%;
-  // height: 400px;
-  // @include response(md){
-  //   display: none;
-  // }
-}
-
-.formulario{
-  padding: 10px;
-  padding-top: 0;
-  width: 471px;
-}
-
-.formulario__input-txt, .formulario__textarea{
-  display: block;
-  width: 100%;
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid #BEBEBE;
-
-}
-
-.formulario__input-txt{
-  height: 33px;
-  padding: 10px;
-  margin-bottom: 10px;
-  @include textStyles(Roboto,500,12px,0.22,normal);
-}
-
-.formulario__textarea{
-  min-width: 100%;
-  max-width: 100%;
-  max-height: 73px;
-}
-
-.labelformularios{
-  color: #5F6368;
-  @include textStyles(Roboto,400,16px,0.22,normal);
-}
-
-.button-cinco{
-  margin-top: 4rem;
- @include btnStyles;
+  @include response(md){
+    text-align: center;
+  }
 }
 
 .texto-placeholder{
   color: #5F6368;
   @include textStyles(Roboto,300,12px,0.22,lighter);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  
+}
+.button-cinco{
+  margin-top: 4rem;
+  @include btnStyles;
+
+  @include response(md){
+
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+.labelformularios{
+  color: #5F6368;
+  @include textStyles(Roboto,400,16px,0.22,normal);
+}
+
+.form_section{
+  width: 100%;
+  max-height: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+
+.form_section input, .form_section textarea{
+  width: 60%;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #BEBEBE;
+  @include response(md){
+    width: 100%;
+  }
+}
+
+.img{
+  width: 40%;
+  @include response(md){
+    display: none;
+  }
 }
