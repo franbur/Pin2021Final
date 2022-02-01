@@ -32,5 +32,9 @@ Si se quisiera ejecutar el servidor de desarrollo de React se debería hacer a t
 ```cmd
 npm start-dev
 ```
-De esta forma se ejecutará el programa como de constumbre.
+De esta forma se ejecutará el programa como de constumbre.  
+Una vez se termine el desarrollo se debe volver a hacer la build de producción con:
+```npm
+npm run build
+```
 
