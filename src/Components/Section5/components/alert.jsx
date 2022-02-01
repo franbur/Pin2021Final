@@ -19,7 +19,7 @@ function Alert(props){
         return (
             <div class="alert alert-success" role="alert">
                 <b>Tu mensaje ha sido recibido! </b><br />
-                <p>Reisa tu correo electrónico para la verificación.</p>
+                <p>Revisa tu correo electrónico para la verificación.</p>
             </div>
         )
     } else if (props.type === 200){
