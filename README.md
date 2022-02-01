@@ -1,11 +1,43 @@
 # Frontend Proyecto Final Integrador Diplomado Full Stack UNC
 
-## Colaboradores
+### Colaboradores
 * [Vladimir Varela](https://github.com/VladimirVarelaH)
 * [Jose Fuentes](https://github.com/JoanFuentes1981)
 * [Gisela Ruiz](https://github.com/franbur)
 
-## Validación de datos
+## Pautas para la elaboración Integrador
+One page en ReactJs tomando como referencia el diseño trabajado a lo largo del programa. Debe respetar el diseño y funcionalidad:
+
+* Bloque de navegación principal con comportamiento smooth scroll (al hacer clic animar hasta el destino).
+* Bloque de slider con tres imágenes.
+* Bloque de texto fullwidth.
+* Bloque de slider centrado con dos pasadas y fondo a dos colores.
+* Bloque con acordeón e imagen de fondo ubicada a la  derecha.
+* Bloque de formulario con validación al enviar (puede ser validado con JavaScript detallado del cliente, o bien del lado del servidor mediante Laravel),
+ mostrar resultados de validación de forma clara.
+* Conectar con API REST creada en Laravel para el envío de formulario vía mail y guardar los datos del envío en una base de datos.
+* Ambos desarrollos deben estar en modo online (expuesto en URLs accesibles vía web)
+* Se evaluará resolución Desktop y mobile.
+
+
+## Descripción :bookmark:
+
+* Se realizo trabajo coolaborativo : a traves de división de tareas por equipos.
+
+## Front-end.
+
+* Se crea One-Page en ReactJs.
+* Se migran y ordenan los archivos.
+* Se aplican estilos y se costumiza Framework.
+
+## Tecnologías utilizadas
+
+* HTML.
+* Css.
+* Sass.
+* Bootstrap.
+ 
+ ## Validación de datos
 Para la validación del correo elctrónico se programó una función que confirma que el formato sea *texto@dominio.extension*. Los criterios son:
 * Que el texto exista antes del arroba.
 * Que el dominio exista entre el arroba y el punto.
